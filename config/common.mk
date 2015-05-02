@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     DashClock \
+    SlimOTA \
     KernelAdiutor 
 
 # Extra tools
