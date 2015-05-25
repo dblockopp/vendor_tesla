@@ -150,7 +150,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(TESLA_MOD_VERSION) \
     ro.tesla.buildtype=$(TESLA_BUILD_TYPE)
 
-EXTENDED_POST_PROCESS_PROPS := vendor/tesla/tools/slim_process_props.py
-
 # Squisher Location
 SQUISHER_SCRIPT := vendor/tesla/tools/squisher
