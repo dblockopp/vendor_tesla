@@ -81,24 +81,32 @@ PRODUCT_PACKAGES += \
 
 # AudioFX
 PRODUCT_PACKAGES += \
+    Eleven \
     AudioFX
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     SlimLauncher \
+    LockClock \
     LatinIME \
     BluetoothExt \
     DashClock
 
 # Extra tools
 PRODUCT_PACKAGES += \
+    libsepol \
     openvpn \
     e2fsck \
     mke2fs \
     tune2fs \
     mount.exfat \
     fsck.exfat \
-    mkfs.exfat
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
@@ -106,6 +114,11 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegvdec \
     libFFmpegExtractor \
     libnamparser
+
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
