@@ -76,7 +76,7 @@ function teslaremote()
 
     project="${proj//\//_}"
 
-    git remote add tesla "git@github.com:Tesla-Redux/$pfx$project"
+    git remote add tesla "git@github.com:Tesla-Redux-Devices/$pfx$project"
     echo "Remote 'tesla' created"
 }
 
@@ -152,5 +152,5 @@ function tesla_push()
         proj="android_$proj"
     fi
 
-    git $path_opt push "ssh://${ssh_name}/Tesla-Redux/$proj" "HEAD:refs/for/$branch"
+    git $path_opt push "ssh://${ssh_name}/Tesla-Redux-Devices/$proj" "HEAD:refs/for/$branch"
 }
