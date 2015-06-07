@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     LatinIME \
     BluetoothExt \
-    DashClock
+    DashClock \
+    KernelAdiutor
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -134,10 +135,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlay/common
 PRODUCT_COPY_FILES += \
     vendor/tesla/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
-# Kernel Auditor
-PRODUCT_COPY_FILES += \
-    vendor/tesla/prebuilt/apps/tesla_auditor.apk:system/app/Auditor/Auditor.apk
 
 # Boot animation include
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
