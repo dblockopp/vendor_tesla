@@ -172,12 +172,12 @@ endif
 # teslaLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
 PRODUCT_VERSION_MINOR = High_Voltage
-PRODUCT_VERSION_MAINTENANCE = 1.5
+PRODUCT_VERSION_MAINTENANCE = 1.8
 ifdef TESLA_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := Release
+    TESLA_BUILD_TYPE := Testing
     TESLA_POSTFIX := -$(shell date +"%Y%m%d")
 endif
 
