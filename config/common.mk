@@ -177,7 +177,7 @@ ifdef TESLA_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := Release
+    TESLA_BUILD_TYPE := Testing
     TESLA_POSTFIX := -$(shell date +"%Y%m%d")
 endif
 
