@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     DashClock \
-    KernelAdiutor
+    KernelAdiutor \
+    WallpaperPicker
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -111,10 +112,13 @@ PRODUCT_PACKAGES += \
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
+    libffmpeg_extractor \
+    libffmpeg_omx \
     media_codecs_ffmpeg.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.sf.omx-plugin=libffmpeg_omx.so \
+    media.sf.extractor-plugin=libffmpeg_extractor.so
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -172,12 +176,12 @@ endif
 # teslaLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
 PRODUCT_VERSION_MINOR = High_Voltage
-PRODUCT_VERSION_MAINTENANCE = 1.8
+PRODUCT_VERSION_MAINTENANCE = 1.9
 ifdef TESLA_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := Release
+    TESLA_BUILD_TYPE := Testing
     TESLA_POSTFIX := -$(shell date +"%Y%m%d")
 endif
 
