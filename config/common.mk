@@ -180,7 +180,7 @@ ifdef TESLA_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif
 ifndef TESLA_BUILD_TYPE
-    TESLA_BUILD_TYPE := MS-Testing
+    TESLA_BUILD_TYPE := RC
     TESLA_POSTFIX := -$(shell date +"%Y%m%d")
 endif
 
