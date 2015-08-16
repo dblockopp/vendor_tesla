@@ -91,8 +91,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     DashClock \
-    KernelAdiutor \
-    WallpaperPicker
+    KernelAdiutor 
 
 # Extra tools
 PRODUCT_PACKAGES += \
