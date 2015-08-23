@@ -91,8 +91,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     DashClock \
-    KernelAdiutor \
-    WallpaperPicker
+    KernelAdiutor 
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -119,6 +118,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
+
+# CM Platform Library Resource Package
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.platform-res
+
+# CM Platform Library
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.platform \
+    org.cyanogenmod.platform.xml
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -176,7 +184,7 @@ endif
 # teslaLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
 PRODUCT_VERSION_MINOR = High_Voltage
-PRODUCT_VERSION_MAINTENANCE = 2.0
+PRODUCT_VERSION_MAINTENANCE = 2.1
 ifdef TESLA_BUILD_EXTRA
     TESLA_POSTFIX := -$(TESLA_BUILD_EXTRA)
 endif

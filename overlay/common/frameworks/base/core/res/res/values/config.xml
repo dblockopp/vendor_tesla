@@ -43,5 +43,11 @@
     <string name="config_mms_user_agent">"Android-Mms/2.0"</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
+    <!-- Defines external services to be started by the SystemServer at boot. The service itself
+         should publish as a binder services in its onStart -->
+    <string-array name="config_externalCMServices">
+        <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
+    </string-array>
+
 </resources>
 
