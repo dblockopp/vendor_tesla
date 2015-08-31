@@ -87,6 +87,7 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     SlimLauncher \
+    SlimOTA \
     LockClock \
     LatinIME \
     BluetoothExt \
