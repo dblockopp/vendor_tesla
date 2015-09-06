@@ -1,3 +1,6 @@
+# Inherit build optimizations
+include vendor/tesla/config/optimizations.mk
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -142,6 +145,9 @@ PRODUCT_PACKAGES += \
 -include vendor/extra/product.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlay/common
+
+# SM Makefile
+include vendor/tesla/config/sm.mk
 
 # SuperSU
 PRODUCT_COPY_FILES += \
