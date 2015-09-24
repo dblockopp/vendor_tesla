@@ -69,6 +69,7 @@ on post-fs-data
     mkdir /cache/recovery 0770 system cache
 
 on boot
+    start sysinit
     # interactive governor
     chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
